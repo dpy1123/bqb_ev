@@ -1,10 +1,10 @@
 {
   "name": "bqb_ev",
   "productName": "bqb_ev",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "dpy1123 <dpy1123@126.com>",
-  "description": "An electron-vue project",
-  "license": null,
+  "description": "desktop client",
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js",
