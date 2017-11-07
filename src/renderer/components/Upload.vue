@@ -115,11 +115,11 @@ export default {
             this.unsaved_files = []
 
             var files = this.selected_files
-            var batch_number = Math.ceil(files.length / batch_size)
+            var batch_number = Math.floor(files.length / batch_size)
             var reast = files.length % batch_size
             
             if(batch_number > 1) {
-                for (var i = 0; i < batch_number-1; i++) {
+                for (var i = 0; i < batch_number; i++) {
                     var form_data = new FormData()
                     for (var j = 0; j < batch_size; j++) {
                         var file = files[i*batch_size+j]
